@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Stock Market.in</title>
+  <!-- <link rel="stylesheet" href="index.css"> -->
+ <style>
+  *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.log_page{
+  width: 100vw;
+  height: 100vh;
+  background:url(/Images/pic2_1.jpeg) no-repeat;
+
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+.logoimg img{
+  width: 85px;
+  height: 80px;
+  margin-left: 40px;
+  margin-top: 5px;
+  border-radius: 20px;
+  background-size: cover;
+}
+  
+
+.logoimg{
+  display: flex;
+  justify-content: space-between;
+}
+
+.logoimg a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-right: 50px;
+}
+  
+
+
+.custom-width{
+  position: relative;
+  width: 400px;
+  height: 400px;
+  display: grid;
+  /* justify-content: center;
+  align-content: center; */
+  border: 3px solid rgb(168, 78, 78);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); 
+}
+
+@media screen and (max-width: 600px) {
+  .custom-width{
+    top: 55%;
+  }
+}
+ 
+
+
+
+.login{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+  margin-top: 5px;
+}
+
+
+.btn_log  {
+  width: 100px;
+  height: 40px;
+  
+  border-radius: 50px;
+
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  background:  rgb(83, 173, 83);
+  color: rgb(238, 234, 234);
+  border: none;
+}
+
+.btn_reg{
+  width: 100px;
+  height: 40px;
+
+  border-radius: 50px;
+
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+
+  color: black;
+  border: none;
+}
+
+.inputs{
+  margin-left: 60px;
+  margin-top: 10px;
+}
+
+.inputs input{
+  width: 60%;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  padding: 10px;
+  transition: 0.8s ease-in-out;
+  background: transparent;
+ 
+}
+
+.inputs input:hover{
+  width: 80%;
+}
+
+
+
+.checkbox input{
+  width: 100px;
+  height: 10%;
+  font-size: 1rem;
+}
+
+.checkbox  input {
+  width: 30px;
+  height: 15px;
+}
+
+.checkbox{
+  margin-left: 60px;
+}
+
+.checkbox span{
+  font-size: 15px;
+  font-weight: 100;
+ font-variant: normal;
+}
+ 
+
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+.button button{
+  padding-left:  60px ;
+  width: 100px;
+  height: 40px;
+  padding: 15px;
+  border: none;
+  background-color: rgb(83, 173, 83);
+  color: white;
+  border-radius:20px;
+  font-size: 20px;
+  position: absolute;
+  bottom: 10px;
+  cursor: pointer;
+  transition: 0.8s ease-in-out;
+}
+
+.button button:hover{
+  
+  transform: scale(1.1);
+  border: 2px solid rgb(83, 173, 83);
+}
+ 
+button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button a{
+  color: white;
+  text-decoration: none;
+}
+ </style>
+</head>
+<body class="log_page">
+  <div class="logoimg">
+    <img src="/Images/logo1.jpeg" alt="logo">
+  </div>
+ 
+  <div class="container custom-width">
+
+    <div class="login">
+      <button class="btn_log rounded-pill px-3">Login</button>
+      <button class="btn_reg">Register</button>
+    </div>
+    <div class="inputs">
+      <input type="email" placeholder="Email id" !required>
+    </div>
+    <div class="inputs">
+      <input type="password" placeholder="Enter Password" !required>
+    </div>
+    <div class="checkbox">
+      <input type="checkbox" class="boxsize"><span>Remember password</span>
+    </div>
+    <div class="button">
+      <button><a href="home.html">Login</a></button>
+    </div>
+  </div>
+  
+</body>
+</html>
